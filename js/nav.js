@@ -21,3 +21,35 @@ document.addEventListener('input', function(e) {
   var display = e.target.parentElement.querySelector('.confidence-value');
   if (display) display.textContent = e.target.value + ' / 100';
 });
+
+// Language toggle (NO/EN)
+function setLanguage(lang) {
+  document.querySelectorAll('[data-en]').forEach(function(el) {
+    if (!el.dataset.no) el.dataset.no = el.innerHTML;
+    el.innerHTML = (lang === 'en') ? el.dataset.en : el.dataset.no;
+  });
+  document.querySelectorAll('[data-en-placeholder]').forEach(function(el) {
+    if (!el.dataset.noPlaceholder) el.dataset.noPlaceholder = el.placeholder;
+    el.placeholder = (lang === 'en') ? el.dataset.enPlaceholder : el.dataset.noPlaceholder;
+  });
+  document.querySelectorAll('[data-en-value]').forEach(function(el) {
+    if (!el.dataset.noValue) el.dataset.noValue = el.value;
+    el.value = (lang === 'en') ? el.dataset.enValue : el.dataset.noValue;
+  });
+  document.querySelectorAll('.lang-toggle button').forEach(function(btn) {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+  try { sessionStorage.setItem('atlas-lang', lang); } catch(e) {}
+}
+
+document.addEventListener('click', function(e) {
+  var btn = e.target.closest('.lang-toggle button');
+  if (btn && btn.dataset.lang) setLanguage(btn.dataset.lang);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  try {
+    var saved = sessionStorage.getItem('atlas-lang');
+    if (saved === 'en') setLanguage('en');
+  } catch(e) {}
+});
