@@ -12,32 +12,32 @@
   <nav class="nav-bar">
     <span class="nav-title">ATLAS</span>
     <ul class="nav-links">
-      <li><a href="1a.html">Pasientvurdering</a></li>
-      <li><a href="1b.html">Henvisning</a></li>
-      <li><a href="1c.html" class="active">Tilbakemelding</a></li>
-      <li><a href="../shared/3a.html">Kalibrering</a></li>
-      <li><a href="../shared/3b.html">Dialog</a></li>
+      <li><a href="1a.html" data-en="Patient assessment">Pasientvurdering</a></li>
+      <li><a href="1b.html" data-en="Referral">Henvisning</a></li>
+      <li><a href="1c.html" class="active" data-en="Feedback">Tilbakemelding</a></li>
+      <li><a href="../shared/3a.html" data-en="Calibration">Kalibrering</a></li>
+      <li><a href="../shared/3b.html" data-en="Dialogue">Dialog</a></li>
     </ul>
-    <span class="nav-role">Fastlege</span>
+    <span class="nav-role" data-en="GP">Fastlege</span><div class="lang-toggle"><button data-lang="no" class="active">NO</button><button data-lang="en">EN</button></div>
   </nav>
 
   <div class="page-container">
 
     <div class="screen-header">
-      <h1>Tilbakemelding på henvisning</h1>
-      <p class="screen-context">Pasient: Astrid Holm, 28 år — Henvisning til DPS sendt 01.03.2026</p>
+      <h1 data-en="Referral feedback">Tilbakemelding på henvisning</h1>
+      <p class="screen-context" data-en="Patient: Astrid Holm, 28 years — Referral to DPS sent 01.03.2026">Pasient: Astrid Holm, 28 år — Henvisning til DPS sendt 01.03.2026</p>
     </div>
 
     <!-- Component 11: Referral outcome notification | DP5 | CUCF D2 | Source: atlas-mockup-specification Screen 1C Row 1 -->
     <div class="card">
       <div class="card-header">
-        <span class="card-title">Henvisningsutfall</span>
-        <span class="status-badge status-rejected">Avslått</span>
+        <span class="card-title" data-en="Referral outcome">Henvisningsutfall</span>
+        <span class="status-badge status-rejected" data-en="Rejected">Avslått</span>
       </div>
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary);" data-en="Assessment received: 15.03.2026 — 14 days after submission.">
         Vurdering mottatt: 15.03.2026 — 14 dager etter innsending.
       </p>
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-top: var(--space-xs);">
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-top: var(--space-xs);" data-en="Assessed by: DPS Sørlandet, Intake Team">
         Vurdert av: DPS Sørlandet, Inntaksteam
       </p>
     </div>
@@ -45,46 +45,46 @@
     <!-- Component 12: Structured rejection reasoning | DP5, DP2 | CUCF D2 | Source: atlas-mockup-specification Screen 1C Row 2 -->
     <div class="card">
       <div class="card-header">
-        <span class="card-title">Begrunnelse for avslag</span>
-        <span class="card-label">Kategorisert tilbakemelding</span>
+        <span class="card-title" data-en="Rejection reasoning">Begrunnelse for avslag</span>
+        <span class="card-label" data-en="Categorised feedback">Kategorisert tilbakemelding</span>
       </div>
 
       <div style="margin-bottom: var(--space-md);">
-        <div style="font-size: var(--text-sm); font-weight: 500; margin-bottom: var(--space-xs);">Avslagskategorier:</div>
-        <span class="tag tag-rejection">Situasjonell krise</span>
-        <span class="tag tag-rejection">Funksjonsnedgang for kort</span>
-        <span class="tag tag-rejection">Kommunalt tilbud mer hensiktsmessig</span>
+        <div style="font-size: var(--text-sm); font-weight: 500; margin-bottom: var(--space-xs);" data-en="Rejection categories:">Avslagskategorier:</div>
+        <span class="tag tag-rejection" data-en="Situational crisis">Situasjonell krise</span>
+        <span class="tag tag-rejection" data-en="Functional decline too short">Funksjonsnedgang for kort</span>
+        <span class="tag tag-rejection" data-en="Municipal services more appropriate">Kommunalt tilbud mer hensiktsmessig</span>
       </div>
 
       <div style="font-size: var(--text-sm); color: var(--color-text-secondary);">
-        <p style="margin-bottom: var(--space-sm);">
+        <p style="margin-bottom: var(--space-sm);" data-en="&lt;strong&gt;Specialist's explanation:&lt;/strong&gt;">
           <strong>Spesialistens forklaring:</strong>
         </p>
-        <p style="margin-bottom: var(--space-sm);">
+        <p style="margin-bottom: var(--space-sm);" data-en="The presentation is consistent with emotionally unstable personality traits, but the current crisis is primarily situational (relationship breakdown). The functional decline is recent (three weeks) and does not meet the duration criterion for specialist treatment for this presentation type.">
           Presentasjonen er forenlig med emosjonelt ustabile personlighetstrekk, men den nåværende krisen er primært situasjonell (samlivsbrudd). Funksjonsnedgangen er av nylig dato (tre uker) og møter ikke varighetskriteriet for spesialistbehandling ved denne presentasjonstypen.
         </p>
-        <p>
+        <p data-en="Municipal psychology service with structured crisis follow-up is considered more appropriate at this time.">
           Kommunal psykologtjeneste med strukturert kriseoppfølging vurderes som mer hensiktsmessig på nåværende tidspunkt.
         </p>
       </div>
 
       <div class="expandable-header">
-        <span style="font-size: var(--text-sm); font-weight: 500;">Vis kriterier som ikke var oppfylt</span>
+        <span style="font-size: var(--text-sm); font-weight: 500;" data-en="Show criteria that were not met">Vis kriterier som ikke var oppfylt</span>
         <span class="toggle-icon">&#9654;</span>
       </div>
       <div class="expandable-content">
         <table style="width: 100%; font-size: var(--text-sm); border-collapse: collapse;">
           <tr style="border-bottom: 1px solid var(--color-border-light);">
-            <td style="padding: var(--space-sm); font-weight: 500;">Funksjonsnivå</td>
-            <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Funksjonsfall til stede, men av kort varighet (3 uker). Krever lengre observasjonsperiode for å vurdere alvorlighetsgrad.</td>
+            <td style="padding: var(--space-sm); font-weight: 500;" data-en="Functional level">Funksjonsnivå</td>
+            <td style="padding: var(--space-sm); color: var(--color-text-secondary);" data-en="Functional decline present but of short duration (3 weeks). Requires longer observation period to assess severity.">Funksjonsfall til stede, men av kort varighet (3 uker). Krever lengre observasjonsperiode for å vurdere alvorlighetsgrad.</td>
           </tr>
           <tr style="border-bottom: 1px solid var(--color-border-light);">
-            <td style="padding: var(--space-sm); font-weight: 500;">Varighet</td>
-            <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Symptomer og funksjonsfall knyttet til aktuell livshendelse. For kort varighet til å differensiere mellom tilpasningsreaksjon og vedvarende lidelse.</td>
+            <td style="padding: var(--space-sm); font-weight: 500;" data-en="Duration">Varighet</td>
+            <td style="padding: var(--space-sm); color: var(--color-text-secondary);" data-en="Symptoms and functional decline linked to current life event. Too short duration to differentiate between adjustment reaction and persistent disorder.">Symptomer og funksjonsfall knyttet til aktuell livshendelse. For kort varighet til å differensiere mellom tilpasningsreaksjon og vedvarende lidelse.</td>
           </tr>
           <tr>
-            <td style="padding: var(--space-sm); font-weight: 500;">Behandlingsnytte</td>
-            <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Kommunalt kriseoppfølgingstilbud ikke forsøkt. Spesialistbehandling vurderes som prematur før primærhelsetjenestetiltak er utprøvd.</td>
+            <td style="padding: var(--space-sm); font-weight: 500;" data-en="Treatment benefit">Behandlingsnytte</td>
+            <td style="padding: var(--space-sm); color: var(--color-text-secondary);" data-en="Municipal crisis follow-up service not attempted. Specialist treatment considered premature before primary care measures have been tried.">Kommunalt kriseoppfølgingstilbud ikke forsøkt. Spesialistbehandling vurderes som prematur før primærhelsetjenestetiltak er utprøvd.</td>
           </tr>
         </table>
       </div>
@@ -93,73 +93,31 @@
     <!-- Component 13: Calibration update | DP1, DP10 | CUCF D2 | Source: atlas-mockup-specification Screen 1C Row 3 -->
     <div class="card">
       <div class="card-header">
-        <span class="card-title">Kalibreringsoppdatering</span>
-        <span class="card-label">Ditt mønster etter dette utfallet</span>
+        <span class="card-title" data-en="Calibration update">Kalibreringsoppdatering</span>
+        <span class="card-label" data-en="Your pattern after this outcome">Ditt mønster etter dette utfallet</span>
       </div>
 
       <div class="trend-summary">
         <div class="trend-stat">
           <div class="stat-value">24</div>
-          <div class="stat-label">Totale henvisninger</div>
+          <div class="stat-label" data-en="Total referrals">Totale henvisninger</div>
         </div>
         <div class="trend-stat">
           <div class="stat-value">17</div>
-          <div class="stat-label">Akseptert</div>
+          <div class="stat-label" data-en="Accepted">Akseptert</div>
         </div>
         <div class="trend-stat">
           <div class="stat-value">5</div>
-          <div class="stat-label">Avslått</div>
+          <div class="stat-label" data-en="Rejected">Avslått</div>
         </div>
         <div class="trend-stat">
           <div class="stat-value">2</div>
-          <div class="stat-label">Venter</div>
+          <div class="stat-label" data-en="Pending">Venter</div>
         </div>
       </div>
 
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary);" data-en="Acceptance rate: 71% (17/24) — changed from 74% (17/23) after this rejection.">
         Akseptrate: 71% (17/24) — endret fra 74% (17/23) etter dette avslaget.
       </p>
-      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-xs);">
-        Vanligste avslagsgrunn: utilstrekkelig funksjonsfall-dokumentasjon (3 av 5 avslag) og for kort varighet (2 av 5 avslag).
-      </p>
-      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);">
-        Dette er informasjon, ikke vurdering. Et avslag kan reflektere terskelforskjeller like mye som henvisningskvalitet.
-      </p>
-    </div>
-
-    <!-- Component 14: Dialogue initiation | DP5, DP9 | CUCF D2 | Source: atlas-mockup-specification Screen 1C Row 4 -->
-    <div class="card">
-      <div class="card-header">
-        <span class="card-title">Dialog med spesialisten</span>
-        <span class="card-label">Strukturert kommunikasjon</span>
-      </div>
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
-        Du kan be om klargjøring eller gi tilleggsinformasjon til spesialisten om denne henvisningen. Dialogen er strukturert og knyttet til denne spesifikke henvisningen.
-      </p>
-
-      <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
-        <a href="../shared/3b.html" class="btn">Be om klargjøring</a>
-        <a href="../shared/3b.html" class="btn">Gi tilleggsinformasjon</a>
-      </div>
-
-      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);">
-        Svar forventes innen 5-10 virkedager. Alle dialogmeldinger lagres som del av henvisningshistorikken.
-      </p>
-    </div>
-
-    <div style="margin-top: var(--space-lg); display: flex; justify-content: space-between;">
-      <a href="1b.html" class="btn">&larr; Tilbake til henvisning</a>
-      <a href="../shared/3a.html" class="btn btn-primary">Se kalibreringsoversikt &rarr;</a>
-    </div>
-
-  </div>
-
-  <footer class="prototype-disclaimer">
-    ATLAS er en formativ evalueringsprototype og skal ikke brukes til kliniske beslutninger.<br>
-    Ingen reelle pasientopplysninger eller opplysninger om helsepersonell inngår.<br>
-    <span style="font-size: 0.7rem;">ATLAS is a formative evaluation prototype and must not be used for clinical decision-making. No real patient or clinician data is included.</span>
-  </footer>
-
-  <script src="../js/nav.js"></script>
-</body>
-</html>
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-xs);" data-en="Most common rejection reason: insufficient functional decline documentation (3 of 5 rejections) and too short duration (2 of 5 rejections).">
+        Vanligste avslagsgrunn: utilstrekkelig funksjonsfall-dokumentasjon (3 av 5 avslag) og 

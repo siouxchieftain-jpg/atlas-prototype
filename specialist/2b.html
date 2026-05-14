@@ -12,81 +12,81 @@
   <nav class="nav-bar">
     <span class="nav-title">ATLAS</span>
     <ul class="nav-links">
-      <li><a href="2a.html">Inntaksvurdering</a></li>
-      <li><a href="2b.html" class="active">Tilbakemelding</a></li>
-      <li><a href="../shared/3a.html">Kalibrering</a></li>
-      <li><a href="../shared/3b.html">Dialog</a></li>
+      <li><a href="2a.html" data-en="Intake assessment">Inntaksvurdering</a></li>
+      <li><a href="2b.html" class="active" data-en="Feedback">Tilbakemelding</a></li>
+      <li><a href="../shared/3a.html" data-en="Calibration">Kalibrering</a></li>
+      <li><a href="../shared/3b.html" data-en="Dialogue">Dialog</a></li>
     </ul>
-    <span class="nav-role">DPS Spesialist</span>
+    <span class="nav-role" data-en="DPS Specialist">DPS Spesialist</span><div class="lang-toggle"><button data-lang="no" class="active">NO</button><button data-lang="en">EN</button></div>
   </nav>
 
   <div class="page-container">
 
     <div class="screen-header">
-      <h1>Tilbakemeldingskomposisjon</h1>
-      <p class="screen-context">Pasient: Astrid Holm, 28 år — Henvisning vurdert av inntaksteamet</p>
+      <h1 data-en="Feedback composition">Tilbakemeldingskomposisjon</h1>
+      <p class="screen-context" data-en="Patient: Astrid Holm, 28 years — Referral assessed by the intake team">Pasient: Astrid Holm, 28 år — Henvisning vurdert av inntaksteamet</p>
     </div>
 
     <!-- Component 19: Structured feedback template | DP5, DP4 | CUCF D2 | Source: atlas-mockup-specification Screen 2B Row 1 -->
     <div class="card">
       <div class="card-header">
-        <span class="card-title">Strukturert tilbakemelding</span>
-        <span class="card-label">Kategorisert utfall + forklaring</span>
+        <span class="card-title" data-en="Structured feedback">Strukturert tilbakemelding</span>
+        <span class="card-label" data-en="Categorised outcome + explanation">Kategorisert utfall + forklaring</span>
       </div>
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);" data-en="Select outcome category and provide a structured justification. Predefined reason categories reduce time spent without losing explanatory power.">
         Velg utfallskategori og gi en strukturert begrunnelse. Forhåndsdefinerte årsakskategorier reduserer tidsbruk uten å miste forklaringskraft.
       </p>
 
       <div class="form-field">
-        <label class="form-label">Utfall</label>
+        <label class="form-label" data-en="Outcome">Utfall</label>
         <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-bottom: var(--space-sm);">
-          <span class="btn" style="opacity: 0.5;">Akseptert</span>
-          <span class="btn" style="background: var(--color-rejected); color: white; border-color: var(--color-rejected);">Avslått</span>
-          <span class="btn" style="opacity: 0.5;">Trenger mer informasjon</span>
+          <span class="btn" style="opacity: 0.5;" data-en="Accepted">Akseptert</span>
+          <span class="btn" style="background: var(--color-rejected); color: white; border-color: var(--color-rejected);" data-en="Rejected">Avslått</span>
+          <span class="btn" style="opacity: 0.5;" data-en="Needs more information">Trenger mer informasjon</span>
         </div>
       </div>
 
       <div class="form-field">
-        <label class="form-label">Årsakskategori</label>
+        <label class="form-label" data-en="Reason category">Årsakskategori</label>
         <div style="margin-bottom: var(--space-sm);">
-          <span class="tag tag-threshold" style="border: 2px solid #6B5D4B;">Situasjonell krise</span>
-          <span class="tag tag-diagnostic" style="border: 2px solid #3D5770;">Funksjonsnedgang for kort varighet</span>
-          <span class="tag tag-epistemological">Kommunalt tilbud ikke utprøvd</span>
-          <span class="tag" style="background: #F0F0F0; color: #888;">Utilstrekkelig informasjon</span>
-          <span class="tag" style="background: #F0F0F0; color: #888;">Annen årsak</span>
+          <span class="tag tag-threshold" style="border: 2px solid #6B5D4B;" data-en="Situational crisis">Situasjonell krise</span>
+          <span class="tag tag-diagnostic" style="border: 2px solid #3D5770;" data-en="Functional decline of short duration">Funksjonsnedgang for kort varighet</span>
+          <span class="tag tag-epistemological" data-en="Municipal services not tried">Kommunalt tilbud ikke utprøvd</span>
+          <span class="tag" style="background: #F0F0F0; color: #888;" data-en="Insufficient information">Utilstrekkelig informasjon</span>
+          <span class="tag" style="background: #F0F0F0; color: #888;" data-en="Other reason">Annen årsak</span>
         </div>
-        <p style="font-size: 0.75rem; color: var(--color-text-muted);">Valgte kategorier er uthevet. Flere kategorier kan velges.</p>
+        <p style="font-size: 0.75rem; color: var(--color-text-muted);" data-en="Selected categories are highlighted. Multiple categories can be selected.">Valgte kategorier er uthevet. Flere kategorier kan velges.</p>
       </div>
 
       <div class="form-field">
-        <label class="form-label">Forklaring til fastlegen</label>
-        <textarea class="form-textarea" rows="4">Presentasjonen er forenlig med emosjonelt ustabile personlighetstrekk, men den nåværende krisen er primært situasjonell (samlivsbrudd). Funksjonsnedgangen er av nylig dato (tre uker) og møter ikke varighetskriteriet for spesialistbehandling ved denne presentasjonstypen. Kommunal psykologtjeneste med strukturert kriseoppfølging vurderes som mer hensiktsmessig på nåværende tidspunkt.</textarea>
+        <label class="form-label" data-en="Explanation to the GP">Forklaring til fastlegen</label>
+        <textarea class="form-textarea" rows="4" data-en-value="The presentation is compatible with emotionally unstable personality traits, but the current crisis is primarily situational (relationship breakup). The functional decline is recent (three weeks) and does not meet the duration criterion for specialist treatment for this type of presentation. Municipal psychology service with structured crisis follow-up is considered more appropriate at the current time.">Presentasjonen er forenlig med emosjonelt ustabile personlighetstrekk, men den nåværende krisen er primært situasjonell (samlivsbrudd). Funksjonsnedgangen er av nylig dato (tre uker) og møter ikke varighetskriteriet for spesialistbehandling ved denne presentasjonstypen. Kommunal psykologtjeneste med strukturert kriseoppfølging vurderes som mer hensiktsmessig på nåværende tidspunkt.</textarea>
       </div>
     </div>
 
     <!-- Component 20: Alternative pathway suggestion | DP5 | CUCF D2 | Source: atlas-mockup-specification Screen 2B Row 2 -->
     <div class="card">
       <div class="card-header">
-        <span class="card-title">Alternativt behandlingsforslag</span>
-        <span class="card-label">Hvor pasienten kan få hjelp</span>
+        <span class="card-title" data-en="Alternative pathway suggestion">Alternativt behandlingsforslag</span>
+        <span class="card-label" data-en="Where the patient can get help">Hvor pasienten kan få hjelp</span>
       </div>
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);" data-en="On rejection: suggest where the patient should be followed up instead. Reduces the moral burden of rejection and gives the GP a concrete basis for action.">
         Ved avslag: foreslå hvor pasienten bør følges opp i stedet. Reduserer den moralske byrden ved avslag og gir fastlegen konkret handlingsgrunnlag.
       </p>
 
       <div class="form-field">
-        <label class="form-label">Anbefalt oppfølging</label>
-        <textarea class="form-textarea" rows="3">Kommune-psykolog med strukturert kriseoppfølging. Re-henvis dersom funksjonen ikke bedres innen tre måneder, eller umiddelbar re-henvisning hvis risikofaktorer eskalerer.</textarea>
+        <label class="form-label" data-en="Recommended follow-up">Anbefalt oppfølging</label>
+        <textarea class="form-textarea" rows="3" data-en-value="Municipal psychologist with structured crisis follow-up. Re-refer if function does not improve within three months, or immediate re-referral if risk factors escalate.">Kommune-psykolog med strukturert kriseoppfølging. Re-henvis dersom funksjonen ikke bedres innen tre måneder, eller umiddelbar re-henvisning hvis risikofaktorer eskalerer.</textarea>
       </div>
 
       <div style="margin-top: var(--space-sm); font-size: var(--text-sm); color: var(--color-text-muted);">
-        <p>Forhåndsdefinerte alternativer:</p>
+        <p data-en="Predefined alternatives:">Forhåndsdefinerte alternativer:</p>
         <div style="margin-top: var(--space-xs); display: flex; gap: var(--space-xs); flex-wrap: wrap;">
-          <span class="tag" style="background: var(--color-surface-alt);">Kommunal psykolog</span>
-          <span class="tag" style="background: var(--color-surface-alt);">Rask psykisk helsehjelp</span>
-          <span class="tag" style="background: var(--color-surface-alt);">Fastlege med medikamentell oppfølging</span>
-          <span class="tag" style="background: var(--color-surface-alt);">Privatpraktiserende psykolog</span>
-          <span class="tag" style="background: var(--color-surface-alt);">Re-henvisning etter observasjonsperiode</span>
+          <span class="tag" style="background: var(--color-surface-alt);" data-en="Municipal psychologist">Kommunal psykolog</span>
+          <span class="tag" style="background: var(--color-surface-alt);" data-en="Rapid mental health assistance">Rask psykisk helsehjelp</span>
+          <span class="tag" style="background: var(--color-surface-alt);" data-en="GP with pharmacological follow-up">Fastlege med medikamentell oppfølging</span>
+          <span class="tag" style="background: var(--color-surface-alt);" data-en="Private practising psychologist">Privatpraktiserende psykolog</span>
+          <span class="tag" style="background: var(--color-surface-alt);" data-en="Re-referral after observation period">Re-henvisning etter observasjonsperiode</span>
         </div>
       </div>
     </div>
@@ -94,10 +94,10 @@
     <!-- Component 21: Criteria explanation for GP | DP2, DP9 | CUCF D1 | Source: atlas-mockup-specification Screen 2B Row 3 -->
     <div class="card">
       <div class="card-header">
-        <span class="card-title">Kriterieforklaring for fastlegen</span>
-        <span class="card-label">Lukker opasitetsløkken</span>
+        <span class="card-title" data-en="Criteria explanation for the GP">Kriterieforklaring for fastlegen</span>
+        <span class="card-label" data-en="Closes the opacity loop">Lukker opasitetsløkken</span>
       </div>
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);" data-en="Select which criteria were not met and explain why. The explanation is displayed on the GP's feedback screen in accessible language.">
         Velg hvilke kriterier som ikke var oppfylt og forklar hvorfor. Forklaringen gjengis på fastlegens tilbakemeldingsskjerm i et tilgjengelig språk.
       </p>
 
@@ -105,31 +105,31 @@
         <tr style="border-bottom: 1px solid var(--color-border-light);">
           <td style="padding: var(--space-sm); width: 30%;">
             <label style="display: flex; align-items: center; gap: var(--space-xs); font-weight: 500;">
-              <input type="checkbox" checked disabled> Funksjonsnivå
+              <input type="checkbox" checked disabled> <span data-en="Functional level">Funksjonsnivå</span>
             </label>
           </td>
           <td style="padding: var(--space-sm);">
-            <textarea class="form-textarea" rows="1" style="min-height: auto;">Funksjonsfall til stede, men av kort varighet (3 uker). Krever lengre observasjonsperiode.</textarea>
+            <textarea class="form-textarea" rows="1" style="min-height: auto;" data-en-value="Functional decline present, but of short duration (3 weeks). Requires longer observation period.">Funksjonsfall til stede, men av kort varighet (3 uker). Krever lengre observasjonsperiode.</textarea>
           </td>
         </tr>
         <tr style="border-bottom: 1px solid var(--color-border-light);">
           <td style="padding: var(--space-sm);">
             <label style="display: flex; align-items: center; gap: var(--space-xs); font-weight: 500;">
-              <input type="checkbox" checked disabled> Varighet
+              <input type="checkbox" checked disabled> <span data-en="Duration">Varighet</span>
             </label>
           </td>
           <td style="padding: var(--space-sm);">
-            <textarea class="form-textarea" rows="1" style="min-height: auto;">For kort varighet til å differensiere mellom tilpasningsreaksjon og vedvarende lidelse.</textarea>
+            <textarea class="form-textarea" rows="1" style="min-height: auto;" data-en-value="Too short duration to differentiate between adjustment reaction and persistent disorder.">For kort varighet til å differensiere mellom tilpasningsreaksjon og vedvarende lidelse.</textarea>
           </td>
         </tr>
         <tr>
           <td style="padding: var(--space-sm);">
             <label style="display: flex; align-items: center; gap: var(--space-xs); font-weight: 500;">
-              <input type="checkbox" checked disabled> Behandlingsnytte
+              <input type="checkbox" checked disabled> <span data-en="Treatment benefit">Behandlingsnytte</span>
             </label>
           </td>
           <td style="padding: var(--space-sm);">
-            <textarea class="form-textarea" rows="1" style="min-height: auto;">Kommunalt kriseoppfølgingstilbud ikke forsøkt. Spesialistbehandling vurderes som prematur.</textarea>
+            <textarea class="form-textarea" rows="1" style="min-height: auto;" data-en-value="Municipal crisis follow-up services not attempted. Specialist treatment is considered premature.">Kommunalt kriseoppfølgingstilbud ikke forsøkt. Spesialistbehandling vurderes som prematur.</textarea>
           </td>
         </tr>
       </table>
@@ -138,54 +138,5 @@
     <!-- Component 22: Patient trajectory input | DP5, DP1 | CUCF D2 | Source: atlas-mockup-specification Screen 2B Row 4 -->
     <div class="card">
       <div class="card-header">
-        <span class="card-title">Pasientforløpsregistrering</span>
-        <span class="card-label">For aksepterte pasienter</span>
-      </div>
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
-        For aksepterte henvisninger: registrer behandlingsforløp ved kontrollpunkter (3, 6, 12 måneder). Lav friksjon — avkrysning og kort notat. Resultater bidrar til kalibreringssystemet.
-      </p>
-
-      <!-- This is a rejection case (V4), so show an example of what accepted looks like -->
-      <div style="padding: var(--space-md); background: var(--color-surface-alt); border-radius: var(--border-radius); font-size: var(--text-sm);">
-        <p style="font-weight: 500; margin-bottom: var(--space-sm);">Eksempel — akseptert pasient, 3-måneders kontrollpunkt:</p>
-        <div style="margin-bottom: var(--space-sm);">
-          <label style="display: flex; align-items: center; gap: var(--space-xs);">
-            <input type="checkbox" checked disabled> Behandling påbegynt
-          </label>
-          <label style="display: flex; align-items: center; gap: var(--space-xs);">
-            <input type="checkbox" checked disabled> Bedring observert
-          </label>
-          <label style="display: flex; align-items: center; gap: var(--space-xs);">
-            <input type="checkbox" disabled> Uendret
-          </label>
-          <label style="display: flex; align-items: center; gap: var(--space-xs);">
-            <input type="checkbox" disabled> Forverring
-          </label>
-        </div>
-        <div class="form-field">
-          <label class="form-label">Kort notat</label>
-          <textarea class="form-textarea" rows="1" readonly style="min-height: auto;">God respons på kognitiv terapi. Funksjonen er bedret. Planlegger avslutning etter ytterligere 3 måneder.</textarea>
-        </div>
-      </div>
-
-      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);">
-        Denne pasienten (Astrid Holm) ble avslått. Forløpsregistrering gjelder kun aksepterte pasienter.
-      </p>
-    </div>
-
-    <div style="margin-top: var(--space-lg); display: flex; justify-content: space-between;">
-      <a href="2a.html" class="btn">&larr; Tilbake til vurdering</a>
-      <a href="../shared/3a.html" class="btn btn-primary">Se kalibreringsoversikt &rarr;</a>
-    </div>
-
-  </div>
-
-  <footer class="prototype-disclaimer">
-    ATLAS er en formativ evalueringsprototype og skal ikke brukes til kliniske beslutninger.<br>
-    Ingen reelle pasientopplysninger eller opplysninger om helsepersonell inngår.<br>
-    <span style="font-size: 0.7rem;">ATLAS is a formative evaluation prototype and must not be used for clinical decision-making. No real patient or clinician data is included.</span>
-  </footer>
-
-  <script src="../js/nav.js"></script>
-</body>
-</html>
+        <span class="card-title" data-en="Patient trajectory tracking">Pasientforløpsregistrering</span>
+        <span c

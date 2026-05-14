@@ -12,86 +12,86 @@
   <nav class="nav-bar">
     <span class="nav-title">ATLAS</span>
     <ul class="nav-links">
-      <li><a href="3a.html" class="active">Kalibrering</a></li>
-      <li><a href="3b.html">Dialog</a></li>
+      <li><a href="3a.html" class="active" data-en="Calibration">Kalibrering</a></li>
+      <li><a href="3b.html" data-en="Dialogue">Dialog</a></li>
       <li class="nav-separator" style="color: var(--color-text-muted); font-size: var(--text-sm); padding: 0.5rem;">|</li>
-      <li><a href="../gp/1a.html" style="font-size: 0.75rem; opacity: 0.6;">Fastlege-skjermer</a></li>
-      <li><a href="../specialist/2a.html" style="font-size: 0.75rem; opacity: 0.6;">Spesialist-skjermer</a></li>
+      <li><a href="../gp/1a.html" style="font-size: 0.75rem; opacity: 0.6;" data-en="GP screens">Fastlege-skjermer</a></li>
+      <li><a href="../specialist/2a.html" style="font-size: 0.75rem; opacity: 0.6;" data-en="Specialist screens">Spesialist-skjermer</a></li>
     </ul>
-    <span class="nav-role">Delt visning</span>
+    <span class="nav-role" data-en="Shared view">Delt visning</span><div class="lang-toggle"><button data-lang="no" class="active">NO</button><button data-lang="en">EN</button></div>
   </nav>
 
   <div class="page-container">
 
     <div class="screen-header">
-      <h1>Kalibreringsoversikt</h1>
-      <p class="screen-context">Ditt henvisningsmønster over tid — kun synlig for deg</p>
+      <h1 data-en="Calibration overview">Kalibreringsoversikt</h1>
+      <p class="screen-context" data-en="Your referral pattern over time — only visible to you">Ditt henvisningsmønster over tid — kun synlig for deg</p>
     </div>
 
     <!-- Role-specific views explanation -->
     <div class="card" style="background: var(--color-surface-alt); border-style: dashed;">
       <p style="font-size: var(--text-sm); color: var(--color-text-secondary);">
-        <strong>Visningsregel:</strong> Fastlegen ser sine egne mønsterdata. Spesialisten ser aggregerte data for sitt opptaksområde. Ingen individuell fastlegedata er synlig for spesialisten. Ingen individuell spesialistdata er synlig for fastlegen.
+        <strong data-en="Display rule:">Visningsregel:</strong> <span data-en="The GP sees their own pattern data. The specialist sees aggregated data for their catchment area. No individual GP data is visible to the specialist. No individual specialist data is visible to the GP.">Fastlegen ser sine egne mønsterdata. Spesialisten ser aggregerte data for sitt opptaksområde. Ingen individuell fastlegedata er synlig for spesialisten. Ingen individuell spesialistdata er synlig for fastlegen.</span>
       </p>
     </div>
 
     <!-- Component 23: Referral pattern overview | DP1, DP10 | CUCF D2 | Source: atlas-mockup-specification Screen 3A Row 1 -->
     <div class="card">
       <div class="card-header">
-        <span class="card-title">Henvisningsmønster</span>
-        <span class="card-label">Fastlegevisning — Dr. Haugen</span>
+        <span class="card-title" data-en="Referral pattern">Henvisningsmønster</span>
+        <span class="card-label" data-en="GP view — Dr. Haugen">Fastlegevisning — Dr. Haugen</span>
       </div>
 
       <div class="trend-summary">
         <div class="trend-stat">
           <div class="stat-value">24</div>
-          <div class="stat-label">Totale henvisninger</div>
+          <div class="stat-label" data-en="Total referrals">Totale henvisninger</div>
         </div>
         <div class="trend-stat">
           <div class="stat-value">17</div>
-          <div class="stat-label">Akseptert</div>
+          <div class="stat-label" data-en="Accepted">Akseptert</div>
         </div>
         <div class="trend-stat">
           <div class="stat-value">5</div>
-          <div class="stat-label">Avslått</div>
+          <div class="stat-label" data-en="Rejected">Avslått</div>
         </div>
         <div class="trend-stat">
           <div class="stat-value">2</div>
-          <div class="stat-label">Venter</div>
+          <div class="stat-label" data-en="Pending">Venter</div>
         </div>
       </div>
 
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);" data-en="Acceptance rate: 71% (17/24). Most common rejection reasons:">
         Akseptrate: 71% (17/24). Vanligste avslagsgrunner:
       </p>
       <div style="font-size: var(--text-sm); color: var(--color-text-secondary); padding-left: var(--space-md);">
-        <p>Utilstrekkelig funksjonsfall-dokumentasjon — 3 avslag</p>
-        <p>For kort symptomvarighet — 2 avslag</p>
+        <p data-en="Insufficient functional decline documentation — 3 rejections">Utilstrekkelig funksjonsfall-dokumentasjon — 3 avslag</p>
+        <p data-en="Too short symptom duration — 2 rejections">For kort symptomvarighet — 2 avslag</p>
       </div>
 
       <!-- Specialist aggregate view (expandable demo) -->
       <div class="expandable-header">
-        <span style="font-size: var(--text-sm); color: var(--color-text-muted);">Vis spesialistvisning (aggregerte data)</span>
+        <span style="font-size: var(--text-sm); color: var(--color-text-muted);" data-en="Show specialist view (aggregated data)">Vis spesialistvisning (aggregerte data)</span>
         <span class="toggle-icon">&#9654;</span>
       </div>
       <div class="expandable-content">
         <div style="padding: var(--space-sm); background: var(--color-surface-alt); border-radius: var(--border-radius); font-size: var(--text-sm);">
-          <p style="font-weight: 500; margin-bottom: var(--space-sm);">DPS Sørlandet — Opptaksområde aggregert</p>
+          <p style="font-weight: 500; margin-bottom: var(--space-sm);" data-en="DPS Sørlandet — Catchment area aggregated">DPS Sørlandet — Opptaksområde aggregert</p>
           <div class="trend-summary">
             <div class="trend-stat">
               <div class="stat-value">342</div>
-              <div class="stat-label">Mottatte henvisninger (18 mnd)</div>
+              <div class="stat-label" data-en="Received referrals (18 months)">Mottatte henvisninger (18 mnd)</div>
             </div>
             <div class="trend-stat">
               <div class="stat-value">64%</div>
-              <div class="stat-label">Akseptrate</div>
+              <div class="stat-label" data-en="Acceptance rate">Akseptrate</div>
             </div>
             <div class="trend-stat">
               <div class="stat-value">12</div>
-              <div class="stat-label">Dager gj.sn. svartid</div>
+              <div class="stat-label" data-en="Days avg. response time">Dager gj.sn. svartid</div>
             </div>
           </div>
-          <p style="color: var(--color-text-muted); margin-top: var(--space-xs);">
+          <p style="color: var(--color-text-muted); margin-top: var(--space-xs);" data-en="No individual GP data is shown in the specialist view. All figures are aggregated.">
             Ingen individuelle fastlegedata vises i spesialistvisningen. Alle tall er aggregerte.
           </p>
         </div>
@@ -101,10 +101,10 @@
     <!-- Component 24: Calibration trend | DP1, DP5 | CUCF D2 | Source: atlas-mockup-specification Screen 3A Row 2 -->
     <div class="card">
       <div class="card-header">
-        <span class="card-title">Kalibreringstrend</span>
-        <span class="card-label">Akseptrate over tid</span>
+        <span class="card-title" data-en="Calibration trend">Kalibreringstrend</span>
+        <span class="card-label" data-en="Acceptance rate over time">Akseptrate over tid</span>
       </div>
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);" data-en="Shows your acceptance rate over 18 months with markers for when feedback was received.">
         Viser din akseptrate over 18 måneder med markører for når tilbakemelding ble mottatt.
       </p>
 
@@ -119,12 +119,12 @@
         <div style="margin-bottom: var(--space-xs);">     └──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┐</div>
         <div>       okt nov des jan feb mar apr mai jun jul aug sep okt nov des jan feb mar</div>
         <div style="margin-top: var(--space-xs);">       2024                                                     2026</div>
-        <div style="margin-top: var(--space-sm); color: var(--color-text-muted);">
+        <div style="margin-top: var(--space-sm); color: var(--color-text-muted);" data-en="● = feedback received &nbsp; ─ = period without feedback">
           ● = tilbakemelding mottatt &nbsp; ─ = periode uten tilbakemelding
         </div>
       </div>
 
-      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);">
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);" data-en="The trend shows that the acceptance rate has been relatively stable (70-80%) over the period, with a slight decline after recent rejections. The markers show that feedback was received sporadically.">
         Trenden viser at akseptraten har vært relativt stabil (70-80%) over perioden, med en liten nedgang etter nylige avslag. Markørene viser at tilbakemelding ble mottatt sporadisk.
       </p>
     </div>
@@ -132,60 +132,19 @@
     <!-- Component 25: Criteria evolution tracker | DP2 | CUCF D1 | Source: atlas-mockup-specification Screen 3A Row 3 -->
     <div class="card">
       <div class="card-header">
-        <span class="card-title">Kriterieendringer</span>
-        <span class="card-label">Når og hvordan spesialistkriteriene har endret seg</span>
+        <span class="card-title" data-en="Criteria changes">Kriterieendringer</span>
+        <span class="card-label" data-en="When and how the specialist criteria have changed">Når og hvordan spesialistkriteriene har endret seg</span>
       </div>
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);" data-en="Shows changes in acceptance criteria over time. Addresses the &quot;moving targets&quot; problem — that the GP learns criteria which then change.">
         Viser endringer i akseptkriteriene over tid. Adresserer problemet med "bevegelige mål" — at fastlegen lærer kriterier som deretter endres.
       </p>
 
       <div style="font-size: var(--text-sm);">
         <div style="padding: var(--space-sm); border-left: 3px solid var(--color-accent); margin-bottom: var(--space-md); padding-left: var(--space-md);">
-          <div style="font-weight: 500; color: var(--color-heading);">Mars 2026</div>
-          <p style="color: var(--color-text-secondary); margin-top: var(--space-xs);">
+          <div style="font-weight: 500; color: var(--color-heading);" data-en="March 2026">Mars 2026</div>
+          <p style="color: var(--color-text-secondary); margin-top: var(--space-xs);" data-en="Functional level weighted more strongly in assessment. DPS Sørlandet has clarified that functional decline should be documented with concrete examples from work, social functioning and daily activities — not just general descriptions.">
             Funksjonsnivå vektes sterkere i vurderingen. DPS Sørlandet har presisert at funksjonsfall skal dokumenteres med konkrete eksempler fra arbeid, sosial fungering og daglige aktiviteter — ikke bare generelle beskrivelser.
           </p>
         </div>
 
-        <div style="padding: var(--space-sm); border-left: 3px solid var(--color-border); margin-bottom: var(--space-md); padding-left: var(--space-md);">
-          <div style="font-weight: 500; color: var(--color-heading);">Oktober 2025</div>
-          <p style="color: var(--color-text-secondary); margin-top: var(--space-xs);">
-            Krav om dokumentasjon av forsøkt kommunalt tilbud presisert. Henvisninger uten beskrivelse av hva som er forsøkt i primærhelsetjenesten vil oftere returneres med forespørsel om tilleggsinformasjon.
-          </p>
-        </div>
-
-        <div style="padding: var(--space-sm); border-left: 3px solid var(--color-border); padding-left: var(--space-md);">
-          <div style="font-weight: 500; color: var(--color-heading);">Juni 2025</div>
-          <p style="color: var(--color-text-secondary); margin-top: var(--space-xs);">
-            Ingen vesentlige endringer i kriterier. Ny prioriteringsveileder for angstlidelser publisert — se oppdatert versjon i kriteriepanelet.
-          </p>
-        </div>
-      </div>
-
-      <!-- Bootstrap-aware empty state -->
-      <div class="expandable-header">
-        <span style="font-size: var(--text-sm); color: var(--color-text-muted);">Vis tom tilstand (ny bruker)</span>
-        <span class="toggle-icon">&#9654;</span>
-      </div>
-      <div class="expandable-content">
-        <div class="empty-state">
-          Ingen registrerte kriterieendringer ennå. Endringer vises her når DPS oppdaterer sine akseptkriterier.
-        </div>
-      </div>
-    </div>
-
-    <div style="margin-top: var(--space-lg); text-align: center;">
-      <a href="3b.html" class="btn btn-primary">Gå til dialogrommet &rarr;</a>
-    </div>
-
-  </div>
-
-  <footer class="prototype-disclaimer">
-    ATLAS er en formativ evalueringsprototype og skal ikke brukes til kliniske beslutninger.<br>
-    Ingen reelle pasientopplysninger eller opplysninger om helsepersonell inngår.<br>
-    <span style="font-size: 0.7rem;">ATLAS is a formative evaluation prototype and must not be used for clinical decision-making. No real patient or clinician data is included.</span>
-  </footer>
-
-  <script src="../js/nav.js"></script>
-</body>
-</html>
+        <div style="padding: var
