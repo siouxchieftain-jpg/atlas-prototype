@@ -139,4 +139,53 @@
     <div class="card">
       <div class="card-header">
         <span class="card-title" data-en="Patient trajectory tracking">Pasientforløpsregistrering</span>
-        <span c
+        <span class="card-label" data-en="For accepted patients">For aksepterte pasienter</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);" data-en="For accepted referrals: register treatment trajectory at checkpoints (3, 6, 12 months). Low friction — checkbox and short note. Results contribute to the calibration system.">
+        For aksepterte henvisninger: registrer behandlingsforløp ved kontrollpunkter (3, 6, 12 måneder). Lav friksjon — avkrysning og kort notat. Resultater bidrar til kalibreringssystemet.
+      </p>
+
+      <!-- This is a rejection case (V4), so show an example of what accepted looks like -->
+      <div style="padding: var(--space-md); background: var(--color-surface-alt); border-radius: var(--border-radius); font-size: var(--text-sm);">
+        <p style="font-weight: 500; margin-bottom: var(--space-sm);" data-en="Example — accepted patient, 3-month checkpoint:">Eksempel — akseptert pasient, 3-måneders kontrollpunkt:</p>
+        <div style="margin-bottom: var(--space-sm);">
+          <label style="display: flex; align-items: center; gap: var(--space-xs);">
+            <input type="checkbox" checked disabled> <span data-en="Treatment started">Behandling påbegynt</span>
+          </label>
+          <label style="display: flex; align-items: center; gap: var(--space-xs);">
+            <input type="checkbox" checked disabled> <span data-en="Improvement observed">Bedring observert</span>
+          </label>
+          <label style="display: flex; align-items: center; gap: var(--space-xs);">
+            <input type="checkbox" disabled> <span data-en="Unchanged">Uendret</span>
+          </label>
+          <label style="display: flex; align-items: center; gap: var(--space-xs);">
+            <input type="checkbox" disabled> <span data-en="Deterioration">Forverring</span>
+          </label>
+        </div>
+        <div class="form-field">
+          <label class="form-label" data-en="Short note">Kort notat</label>
+          <textarea class="form-textarea" rows="1" readonly style="min-height: auto;" data-en-value="Good response to cognitive therapy. Function has improved. Planning termination after an additional 3 months.">God respons på kognitiv terapi. Funksjonen er bedret. Planlegger avslutning etter ytterligere 3 måneder.</textarea>
+        </div>
+      </div>
+
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);" data-en="This patient (Astrid Holm) was rejected. Trajectory tracking applies only to accepted patients.">
+        Denne pasienten (Astrid Holm) ble avslått. Forløpsregistrering gjelder kun aksepterte pasienter.
+      </p>
+    </div>
+
+    <div style="margin-top: var(--space-lg); display: flex; justify-content: space-between;">
+      <a href="2a.html" class="btn" data-en="&larr; Back to assessment">&larr; Tilbake til vurdering</a>
+      <a href="../shared/3a.html" class="btn btn-primary" data-en="See calibration overview &rarr;">Se kalibreringsoversikt &rarr;</a>
+    </div>
+
+  </div>
+
+  <footer class="prototype-disclaimer">
+    ATLAS er en formativ evalueringsprototype og skal ikke brukes til kliniske beslutninger.<br>
+    Ingen reelle pasientopplysninger eller opplysninger om helsepersonell inngår.<br>
+    <span style="font-size: 0.7rem;">ATLAS is a formative evaluation prototype and must not be used for clinical decision-making. No real patient or clinician data is included.</span>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

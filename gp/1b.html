@@ -143,4 +143,67 @@
         <span class="card-label" data-en="This patient">Denne pasienten</span>
       </div>
 
-      <!-- Kari Nordli: no prior refe
+      <!-- Kari Nordli: no prior referrals -->
+      <div class="empty-state" data-en="No previous referrals to DPS for this patient.">
+        Ingen tidligere henvisninger til DPS for denne pasienten.
+      </div>
+
+      <!-- Alternative state with history (V3 Erlend, shown as expandable demo) -->
+      <div class="expandable-header">
+        <span style="font-size: var(--text-sm); color: var(--color-text-muted);" data-en="Show example with history (Erlend Bakken)">Vis eksempel med historikk (Erlend Bakken)</span>
+        <span class="toggle-icon">&#9654;</span>
+      </div>
+      <div class="expandable-content">
+        <div style="padding: var(--space-sm); background: var(--color-surface-alt); border-radius: var(--border-radius); font-size: var(--text-sm);">
+          <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-xs);">
+            <span style="font-weight: 500;" data-en="Previous referral — 12.11.2025">Tidligere henvisning — 12.11.2025</span>
+            <span class="status-badge status-rejected" data-en="Rejected">Avslått</span>
+          </div>
+          <p style="color: var(--color-text-secondary);" data-en="Rejection reason: &quot;The patient can be adequately treated in primary care.&quot; No further explanation received.">
+            Avslåttgrunn: "Pasienten kan behandles adekvat i primærhelsetjenesten." Ingen ytterligere forklaring mottatt.
+          </p>
+          <p style="color: var(--color-text-muted); margin-top: var(--space-xs);" data-en="No feedback on what was missing or what would have strengthened the referral.">
+            Ingen tilbakemelding på hva som manglet eller hva som ville styrket henvisningen.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component 10: Override and rationale capture | DP8 | CUCF D2, D3 | Source: atlas-mockup-specification Screen 1B Row 5 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title" data-en="Override and justify">Overstyre og begrunne</span>
+        <span class="card-label" data-en="Your clinical judgement applies">Din kliniske vurdering gjelder</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);" data-en="If your clinical judgement differs from the information compass, you can override with a rationale. No penalty, no friction. The rationale is recorded for your own calibration over time.">
+        Hvis din kliniske vurdering avviker fra informasjonskompasset, kan du overstyre med en begrunnelse. Ingen straff, ingen friksjon. Begrunnelsen registreres for din egen kalibrering over tid.
+      </p>
+
+      <div class="override-section">
+        <div class="override-title" data-en="Override rationale (optional)">Overstyringsbegrunnelse (valgfritt)</div>
+        <div class="form-field">
+          <textarea class="form-textarea" rows="2" placeholder="Eksempel: Klinisk vurdering — pasientens trajektorie er bekymringsverdig til tross for moderate skårer. Funksjonsfallet er raskere enn PHQ-9 reflekterer." data-en-placeholder="Example: Clinical judgement — the patient's trajectory is concerning despite moderate scores. Functional decline is faster than PHQ-9 reflects."></textarea>
+        </div>
+      </div>
+
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);" data-en="Overriding is not an error. It is a clinical decision that contributes to calibration.">
+        Å overstyre er ikke en feil. Det er en klinisk beslutning som bidrar til kalibrering.
+      </p>
+    </div>
+
+    <div style="margin-top: var(--space-lg); display: flex; justify-content: space-between;">
+      <a href="1a.html" class="btn" data-en="&larr; Back to assessment">&larr; Tilbake til vurdering</a>
+      <a href="1c.html" class="btn btn-primary" data-en="View feedback &rarr;">Se tilbakemelding &rarr;</a>
+    </div>
+
+  </div>
+
+  <footer class="prototype-disclaimer">
+    ATLAS er en formativ evalueringsprototype og skal ikke brukes til kliniske beslutninger.<br>
+    Ingen reelle pasientopplysninger eller opplysninger om helsepersonell inngår.<br>
+    <span style="font-size: 0.7rem;">ATLAS is a formative evaluation prototype and must not be used for clinical decision-making. No real patient or clinician data is included.</span>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>
