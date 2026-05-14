@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATLAS — Dialogrom</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Screen 3B: Dialogue Space | Shared bilateral communication -->
+  <nav class="nav-bar">
+    <span class="nav-title">ATLAS</span>
+    <ul class="nav-links">
+      <li><a href="3a.html">Kalibrering</a></li>
+      <li><a href="3b.html" class="active">Dialog</a></li>
+      <li class="nav-separator" style="color: var(--color-text-muted); font-size: var(--text-sm); padding: 0.5rem;">|</li>
+      <li><a href="../gp/1a.html" style="font-size: 0.75rem; opacity: 0.6;">Fastlege-skjermer</a></li>
+      <li><a href="../specialist/2a.html" style="font-size: 0.75rem; opacity: 0.6;">Spesialist-skjermer</a></li>
+    </ul>
+    <span class="nav-role">Delt visning</span>
+  </nav>
+
+  <div class="page-container">
+
+    <div class="screen-header">
+      <h1>Dialogrom</h1>
+      <p class="screen-context">Strukturert kommunikasjon mellom fastlege og spesialist — asynkron, sakstilknyttet</p>
+    </div>
+
+    <!-- Component 26: Structured consultation thread | DP5, DP9 | CUCF D2 | Source: atlas-mockup-specification Screen 3B Row 1 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Henvisningsdialog</span>
+        <span class="card-label">Trådet etter pasient/henvisning</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+        Asynkron kommunikasjonskanal knyttet til spesifikke henvisninger. Fastlegen kan spørre "hva manglet?" Spesialisten kan be om klargjøring uten fullstendig avslag.
+      </p>
+
+      <!-- Thread: Astrid Holm (V4) -->
+      <div style="font-size: var(--text-sm); font-weight: 500; color: var(--color-heading); margin-bottom: var(--space-sm);">
+        Tråd: Astrid Holm — Henvisning 01.03.2026
+        <span class="status-badge status-rejected" style="margin-left: var(--space-sm);">Avslått</span>
+      </div>
+
+      <div class="thread">
+        <div class="thread-message">
+          <div class="thread-author">
+            Henvisende fastlege
+            <span class="thread-time">17.03.2026, 10:30</span>
+          </div>
+          <p style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+            Takk for tilbakemeldingen. Jeg forstår vurderingen om at funksjonsnedgangen er av kort varighet. Mitt spørsmål: pasienten har et mønster med gjentakende interpersonlige kriser over flere år, selv om det nåværende funksjonsfallet er nylig. Bør dette kroniske mønsteret ha vært dokumentert annerledes i henvisningen for at det skulle vektes i vurderingen?
+          </p>
+        </div>
+
+        <div class="thread-message">
+          <div class="thread-author">
+            DPS Sørlandet, Inntaksteam
+            <span class="thread-time">21.03.2026, 14:15</span>
+          </div>
+          <p style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+            Godt spørsmål. Det kroniske mønsteret er relevant og ville styrket henvisningen. For denne typen presentasjoner er det nyttig å skille mellom aktuell krise (situasjonell, kort varighet) og underliggende mønster (gjentakende interpersonlige kriser). Hvis det underliggende mønsteret hadde vært tydeligere dokumentert med konkrete eksempler over tid, ville vurderingen muligens vært annerledes. Vi anbefaler å inkludere en tidslinje over tidligere kriser i en eventuell re-henvisning.
+          </p>
+        </div>
+
+        <div class="thread-message">
+          <div class="thread-author">
+            Henvisende fastlege
+            <span class="thread-time">22.03.2026, 09:00</span>
+          </div>
+          <p style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+            Forstått. Jeg vil følge pasienten i tre måneder som anbefalt og vurdere re-henvisning med krisehistorikk-tidslinje dersom funksjonen ikke bedres.
+          </p>
+        </div>
+      </div>
+
+      <!-- Reply field -->
+      <div class="form-field" style="margin-top: var(--space-md);">
+        <label class="form-label">Nytt svar i denne tråden</label>
+        <textarea class="form-textarea" rows="2" placeholder="Skriv ditt svar her..."></textarea>
+      </div>
+      <div style="text-align: right; margin-top: var(--space-sm);">
+        <span class="btn btn-primary" style="opacity: 0.7;">Send svar</span>
+      </div>
+
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);">
+        Svar forventes innen 5-10 virkedager. Alle meldinger lagres som del av henvisningshistorikken.
+      </p>
+    </div>
+
+    <!-- Component 27: Anonymised case discussion | DP2, DP5 | CUCF D2 | Source: atlas-mockup-specification Screen 3B Row 2 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Generell saksdiskusjon</span>
+        <span class="card-label">Anonymisert — ikke knyttet til enkeltpasienter</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+        Rom for generelle diskusjoner om henvisningsmønstre og kriterier, uten tilknytning til individuelle pasienter. Tilsvarer praksiskoordinatorfunksjonen i digital form.
+      </p>
+
+      <div class="thread">
+        <div class="thread-message">
+          <div class="thread-author">
+            DPS Sørlandet, Inntaksteam
+            <span class="thread-time">05.03.2026</span>
+          </div>
+          <p style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+            Vi ser mange henvisninger for moderat depresjon der funksjonsnivå beskrives generelt ("nedsatt funksjon") uten konkrete eksempler. Det som hjelper vurderingen er spesifikke beskrivelser: endring i arbeidskapasitet (sykemelding, redusert stilling), sosial fungering (tilbaketrekning, isolasjon), og daglige aktiviteter (personlig hygiene, matlaging, husarbeid). Jo mer konkret, desto lettere å vurdere alvorlighetsgraden.
+          </p>
+        </div>
+
+        <div class="thread-message">
+          <div class="thread-author">
+            Anonym fastlege
+            <span class="thread-time">08.03.2026</span>
+          </div>
+          <p style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+            Nyttig tilbakemelding. Et spørsmål: når dere skriver "betydelig funksjonsfall" i prioriteringsveilederen, hva er terskelen? Er 50% sykemelding tilstrekkelig, eller kreves det mer omfattende fall i daglig fungering?
+          </p>
+        </div>
+
+        <div class="thread-message">
+          <div class="thread-author">
+            DPS Sørlandet, Inntaksteam
+            <span class="thread-time">12.03.2026</span>
+          </div>
+          <p style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+            50% sykemelding alene er ikke tilstrekkelig. Vi ser på helheten: arbeidskapasitet, sosial fungering og daglige aktiviteter samlet. En pasient som er 50% sykemeldt men fungerer sosialt og klarer daglige gjøremål vurderes annerledes enn en som er 50% sykemeldt og i tillegg har trukket seg tilbake sosialt og forsømmer daglige oppgaver. Helhetsbildet avgjør.
+          </p>
+        </div>
+      </div>
+
+      <!-- New discussion topic -->
+      <div style="margin-top: var(--space-md); border-top: 1px solid var(--color-border-light); padding-top: var(--space-md);">
+        <div class="form-field">
+          <label class="form-label">Start ny diskusjon (anonymisert)</label>
+          <textarea class="form-textarea" rows="2" placeholder="Skriv et generelt spørsmål om henvisningskriterier eller -mønstre..."></textarea>
+        </div>
+        <div style="text-align: right; margin-top: var(--space-sm);">
+          <span class="btn btn-primary" style="opacity: 0.7;">Send innlegg</span>
+        </div>
+      </div>
+
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);">
+        Innlegg i dette rommet er ikke knyttet til individuelle pasienter eller navngitte klinikere. Formålet er å bygge felles forståelse av henvisningskriterier over tid.
+      </p>
+    </div>
+
+    <div style="margin-top: var(--space-lg); text-align: center;">
+      <a href="3a.html" class="btn">&larr; Tilbake til kalibrering</a>
+    </div>
+
+  </div>
+
+  <footer class="prototype-disclaimer">
+    ATLAS er en formativ evalueringsprototype og skal ikke brukes til kliniske beslutninger.<br>
+    Ingen reelle pasientopplysninger eller opplysninger om helsepersonell inngår.<br>
+    <span style="font-size: 0.7rem;">ATLAS is a formative evaluation prototype and must not be used for clinical decision-making. No real patient or clinician data is included.</span>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

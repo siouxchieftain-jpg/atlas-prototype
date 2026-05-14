@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATLAS — Inntaksvurdering (Spesialist)</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Screen 2A: Specialist Intake Assessment View | Decision Point 4 -->
+  <nav class="nav-bar">
+    <span class="nav-title">ATLAS</span>
+    <ul class="nav-links">
+      <li><a href="2a.html" class="active">Inntaksvurdering</a></li>
+      <li><a href="2b.html">Tilbakemelding</a></li>
+      <li><a href="../shared/3a.html">Kalibrering</a></li>
+      <li><a href="../shared/3b.html">Dialog</a></li>
+    </ul>
+    <span class="nav-role">DPS Spesialist</span>
+  </nav>
+
+  <div class="page-container">
+
+    <div class="screen-header">
+      <h1>Inntaksvurdering</h1>
+      <p class="screen-context">Pasient: Kari Nordli, 34 år — Henvist fra fastlege for vurdering av depressive symptomer</p>
+    </div>
+
+    <!-- Component 15: Structured referral display | DP9, DP4 | CUCF D1 | Source: atlas-mockup-specification Screen 2A Row 1 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Mottatt henvisning</span>
+        <span class="card-label">Henvisende fastlege</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+        Henvisning mottatt: 10.03.2026. Strukturerte kategorier vist først, klinisk narrativ tilgjengelig under.
+      </p>
+
+      <!-- Structured categories first (specialist-preferred format) -->
+      <table style="width: 100%; font-size: var(--text-sm); border-collapse: collapse;">
+        <tr style="border-bottom: 1px solid var(--color-border-light);">
+          <td style="padding: var(--space-sm); font-weight: 500; width: 30%;">Funksjonsnedgang</td>
+          <td style="padding: var(--space-sm); color: var(--color-text-secondary);">50% sykemeldt i to uker. Fortsatt i arbeid, men sosial tilbaketrekning og opphør av fritidsaktiviteter. Konsentrasjonsvansker i arbeidsoppgaver.</td>
+        </tr>
+        <tr style="border-bottom: 1px solid var(--color-border-light);">
+          <td style="padding: var(--space-sm); font-weight: 500;">Alvorlighetsgrad</td>
+          <td style="padding: var(--space-sm); color: var(--color-text-secondary);">PHQ-9: 14 (moderat). Nedsatt stemningsleie, tidlig morgenoppvåkning, anhedoni, konsentrasjonsvansker. Vedvarende fire måneder.</td>
+        </tr>
+        <tr style="border-bottom: 1px solid var(--color-border-light);">
+          <td style="padding: var(--space-sm); font-weight: 500;">Varighet</td>
+          <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Fire måneder med gradvis forverring. Sykemelding siste to uker.</td>
+        </tr>
+        <tr style="border-bottom: 1px solid var(--color-border-light);">
+          <td style="padding: var(--space-sm); font-weight: 500;">Risiko</td>
+          <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Selvmordsrisikovurdering gjennomført. Ingen akutt fare identifisert.</td>
+        </tr>
+        <tr>
+          <td style="padding: var(--space-sm); font-weight: 500;">Tidligere behandling</td>
+          <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Rask psykisk helsehjelp (6 uker, uten bedring). Sertralin 50 mg fem år tilbake (god effekt, seponert). Nåværende fastlege har ikke startet medikasjon.</td>
+        </tr>
+      </table>
+
+      <!-- Expandable narrative -->
+      <div class="expandable-header">
+        <span style="font-size: var(--text-sm); font-weight: 500;">Vis fastlegens kliniske narrativ</span>
+        <span class="toggle-icon">&#9654;</span>
+      </div>
+      <div class="expandable-content">
+        <div style="padding: var(--space-sm); background: var(--color-surface-alt); border-radius: var(--border-radius); font-size: var(--text-sm); color: var(--color-text-secondary);">
+          Pasienten gjennomgår skilsmisse, har nylig flyttet til ny kommune og mistet sosialt nettverk. Fastlegen er usikker på om depressive symptomer primært er reaktive (tilpasningsforstyrrelse) eller representerer en utviklende moderat depressiv episode. Funksjonsfall til stede men ikke alvorlig. Ønsker spesialistvurdering for å avklare diagnostisk bilde og behandlingsbehov.
+        </div>
+      </div>
+    </div>
+
+    <!-- Component 16: GP uncertainty disclosure | DP7, DP9 | CUCF D1 | Source: atlas-mockup-specification Screen 2A Row 2 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Fastlegens usikkerhetsbeskrivelse</span>
+        <span class="card-label">Hva fastlegen var usikker på</span>
+      </div>
+      <div style="padding: var(--space-sm); background: var(--color-surface-alt); border-radius: var(--border-radius); font-size: var(--text-sm); color: var(--color-text-secondary);">
+        <p style="margin-bottom: var(--space-xs);"><strong>Fastlegens formulering:</strong></p>
+        <p style="font-style: italic;">
+          "Usikker på om dette er en reaktiv tilpasningsforstyrrelse eller en begynnende moderat depressiv episode. Funksjonsfallet er til stede, men mildt. Manglende respons på kommunalt tilbud taler for spesialistvurdering, men kort varighet og tydelig reaktiv komponent taler mot."
+        </p>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);">
+        Denne usikkerhetsbeskrivelsen er fastlegens egen vurdering av hva som er uklart. Den er overført som førsteklasses data, ikke gjemt i narrativet.
+      </p>
+    </div>
+
+    <!-- Component 17: Referral-level confidence disclosure | DP7, DP9 | CUCF D1 | Source: atlas-mockup-specification Screen 2A Row 3 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Fastlegens konfidens for denne henvisningen</span>
+        <span class="card-label">Kun denne henvisningen</span>
+      </div>
+      <div class="confidence-slider-container">
+        <input type="range" class="confidence-slider" min="0" max="100" value="45" disabled style="pointer-events: none; opacity: 0.8;">
+        <div class="confidence-value">45 / 100</div>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); text-align: center;">
+        Fastlegens selvrapporterte trygghet for denne spesifikke henvisningen. Ingen historiske mønsterdata for den individuelle fastlegen vises her.
+      </p>
+    </div>
+
+    <!-- Component 18: Criteria assessment panel | DP2, DP4 | CUCF D1 | Source: atlas-mockup-specification Screen 2A Row 4 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Din vurdering mot kriterier</span>
+        <span class="card-label">Inntaksteamets vurderingsverktøy</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+        Vurder denne henvisningen mot akseptkriteriene. Feltene er forhåndsutfylt fra fastlegens strukturerte data der det er overlapp. Du justerer etter din vurdering.
+      </p>
+
+      <div class="form-field">
+        <label class="form-label">Symptomenes alvorlighetsgrad — din vurdering</label>
+        <textarea class="form-textarea" rows="2">PHQ-9: 14 — moderat range. Konsistent med lett til moderat depressiv episode. Symptombildet bekreftes av fastlegens beskrivelse.</textarea>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Funksjonsnivå — din vurdering</label>
+        <textarea class="form-textarea" rows="2">Funksjonsfall til stede (50% sykemelding, sosial tilbaketrekning) men begrenset til to uker. Pasienten er fortsatt i arbeid. Funksjonsnivået er ikke klart under terskelen for spesialistbehandling.</textarea>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Varighet — din vurdering</label>
+        <textarea class="form-textarea" rows="2">Fire måneder med gradvis forverring ifølge fastlegen. Sykemelding siste to uker. Varigheten overstiger minimumskravet på 2-3 måneder, men funksjonsfall av kort varighet.</textarea>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Tidligere behandling — din vurdering</label>
+        <textarea class="form-textarea" rows="2">Rask psykisk helsehjelp gjennomført (6 uker, uten bedring). Sertralin 50 mg forsøkt fem år tilbake med god effekt, seponert. Nåværende fastlege har ikke startet medikamentell behandling — dette er et mulig neste steg i primærhelsetjenesten.</textarea>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Risikovurdering — din vurdering</label>
+        <textarea class="form-textarea" rows="2">Fastlegen har gjennomført selvmordsrisikovurdering. Ingen akutt fare identifisert. Ingen opplysninger om voldsrisiko eller alvorlig selvforsømmelse.</textarea>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Behandlingsnytte — din vurdering</label>
+        <textarea class="form-textarea" rows="2">Tydelig reaktiv komponent (skilsmisse, flytting). Rask psykisk helsehjelp forsøkt uten effekt, men medikamentell behandling i primærhelsetjenesten ikke forsøkt. Behandlingsnytte av spesialistbehandling vs. SSRI + videre kommunal oppfølging usikker.</textarea>
+      </div>
+
+      <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: var(--space-sm);">
+        Behandlingsnytte er et spesialistvurdert kriterium. Fastlegen har ikke nødvendigvis tilgang til den informasjonen som kreves for å vurdere dette.
+      </p>
+    </div>
+
+    <div style="margin-top: var(--space-lg); text-align: center;">
+      <a href="2b.html" class="btn btn-primary">Gå til tilbakemeldingskomposisjon &rarr;</a>
+    </div>
+
+  </div>
+
+  <footer class="prototype-disclaimer">
+    ATLAS er en formativ evalueringsprototype og skal ikke brukes til kliniske beslutninger.<br>
+    Ingen reelle pasientopplysninger eller opplysninger om helsepersonell inngår.<br>
+    <span style="font-size: 0.7rem;">ATLAS is a formative evaluation prototype and must not be used for clinical decision-making. No real patient or clinician data is included.</span>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATLAS — Pasientvurdering (Fastlege)</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Screen 1A: GP Patient Assessment Overview | Decision Point 1 -->
+  <nav class="nav-bar">
+    <span class="nav-title">ATLAS</span>
+    <ul class="nav-links">
+      <li><a href="1a.html" class="active">Pasientvurdering</a></li>
+      <li><a href="1b.html">Henvisning</a></li>
+      <li><a href="1c.html">Tilbakemelding</a></li>
+      <li><a href="../shared/3a.html">Kalibrering</a></li>
+      <li><a href="../shared/3b.html">Dialog</a></li>
+    </ul>
+    <span class="nav-role">Fastlege</span>
+  </nav>
+
+  <div class="page-container">
+
+    <div class="screen-header">
+      <h1>Pasientvurdering</h1>
+      <p class="screen-context">Pasient: Kari Nordli, 34 år — Vurdering av henvisningsbehov til DPS</p>
+    </div>
+
+    <!-- Component 1: Grey-zone indicator | DP7 | CUCF D1 | Source: atlas-mockup-specification Screen 1A Row 1 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Grå-sone-vurdering</span>
+        <span class="card-label">Usikkerhetsområde</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+        Hvor denne presentasjonen befinner seg mellom tydelig innenfor og tydelig utenfor spesialistkriteriene.
+      </p>
+      <div class="uncertainty-band moderate" style="background: var(--color-border-light);">
+        <div class="band-fill" style="width: 55%;"></div>
+      </div>
+      <div class="uncertainty-labels">
+        <span>Tydelig utenfor kriterier</span>
+        <span>Grå sone</span>
+        <span>Tydelig innenfor kriterier</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-top: var(--space-sm);">
+        Moderat usikkerhet — presentasjonen har trekk som peker i begge retninger. Reaktiv komponent og kort varighet taler mot, mens funksjonsfall og manglende respons på kommunalt tilbud taler for.
+      </p>
+    </div>
+
+    <!-- Component 2: Uncertainty type flags | DP7 | CUCF D1 | Source: atlas-mockup-specification Screen 1A Row 2 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Usikkerhetstyper</span>
+        <span class="card-label">Hva er uklart</span>
+      </div>
+      <div style="margin-top: var(--space-xs);">
+        <span class="tag tag-diagnostic">Diagnostisk</span>
+        <span class="tag tag-threshold">Terskel</span>
+      </div>
+      <div style="margin-top: var(--space-sm); font-size: var(--text-sm); color: var(--color-text-secondary);">
+        <p style="margin-bottom: var(--space-xs);"><strong>Diagnostisk:</strong> Reaktiv tilpasningsforstyrrelse eller begynnende moderat depressiv episode?</p>
+        <p><strong>Terskel:</strong> Funksjonsfall er til stede, men mildt. Møter dette kriteriene for spesialistbehandling?</p>
+      </div>
+    </div>
+
+    <!-- Component 3: Confidence self-report | DP1, DP10 | CUCF D2 | Source: atlas-mockup-specification Screen 1A Row 3 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Din trygghet i vurderingen</span>
+        <span class="card-label">Selvrapportert konfidens</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+        Hvor trygg er du på din vurdering av denne pasienten akkurat nå?
+      </p>
+      <div class="confidence-slider-container">
+        <input type="range" class="confidence-slider" min="0" max="100" value="45">
+        <div class="confidence-value">45 / 100</div>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); text-align: center;">
+        Lav trygghet indikerer ikke feil vurdering — det registrerer usikkerhet som informasjon.
+      </p>
+    </div>
+
+    <!-- Component 4: Pattern history summary | DP1, DP10 | CUCF D2 | Source: atlas-mockup-specification Screen 1A Row 4 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Ditt henvisningsmønster</span>
+        <span class="card-label">Kun synlig for deg</span>
+      </div>
+
+      <!-- Mature data state -->
+      <div class="trend-summary">
+        <div class="trend-stat">
+          <div class="stat-value">23</div>
+          <div class="stat-label">Totale henvisninger</div>
+        </div>
+        <div class="trend-stat">
+          <div class="stat-value">17</div>
+          <div class="stat-label">Akseptert</div>
+        </div>
+        <div class="trend-stat">
+          <div class="stat-value">4</div>
+          <div class="stat-label">Avslått</div>
+        </div>
+        <div class="trend-stat">
+          <div class="stat-value">2</div>
+          <div class="stat-label">Venter</div>
+        </div>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+        Akseptrate: 74% (17/23) — stabil over siste 18 måneder. Vanligste avslagsgrunn: utilstrekkelig funksjonsfall-dokumentasjon (3 av 4 avslag).
+      </p>
+
+      <!-- Bootstrap-aware empty state (hidden by default, demonstrates BP8) -->
+      <div class="expandable-header">
+        <span style="font-size: var(--text-sm); color: var(--color-text-muted);">Vis tom tilstand (ny bruker)</span>
+        <span class="toggle-icon">&#9654;</span>
+      </div>
+      <div class="expandable-content">
+        <div class="empty-state">
+          Ingen henvisningsdata ennå. Mønsteret ditt vises her etter at du har sendt dine første henvisninger og mottatt tilbakemelding.
+        </div>
+      </div>
+    </div>
+
+    <!-- Component 5: Quick-view criteria panel | DP2 | CUCF D1 | Source: atlas-mockup-specification Screen 1A Row 5 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Spesialistkriterier</span>
+        <span class="card-label">Akseptfaktorer for denne presentasjonstypen</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+        Depresjon / angst — Prioriteringsveileder for psykisk helsevern for voksne
+      </p>
+
+      <div class="expandable-header">
+        <span style="font-size: var(--text-sm); font-weight: 500;">Vis detaljer</span>
+        <span class="toggle-icon">&#9654;</span>
+      </div>
+      <div class="expandable-content">
+        <table style="width: 100%; font-size: var(--text-sm); border-collapse: collapse;">
+          <tr style="border-bottom: 1px solid var(--color-border-light);">
+            <td style="padding: var(--space-sm); font-weight: 500;">Symptomenes alvorlighetsgrad</td>
+            <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Moderat til alvorlig. PHQ-9 &ge; 15 eller tilsvarende klinisk vurdering.</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border-light);">
+            <td style="padding: var(--space-sm); font-weight: 500;">Funksjonsnivå</td>
+            <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Betydelig funksjonsfall i arbeid, sosial fungering eller daglige aktiviteter.</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border-light);">
+            <td style="padding: var(--space-sm); font-weight: 500;">Varighet</td>
+            <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Symptomer i mer enn 2-3 måneder, eller akutt forverring.</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border-light);">
+            <td style="padding: var(--space-sm); font-weight: 500;">Tidligere behandling</td>
+            <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Har forsøkt adekvat behandling i primærhelsetjenesten uten tilstrekkelig bedring.</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border-light);">
+            <td style="padding: var(--space-sm); font-weight: 500;">Risikovurdering</td>
+            <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Selvmordsrisiko, voldsrisiko eller alvorlig selvforsømmelse.</td>
+          </tr>
+          <tr>
+            <td style="padding: var(--space-sm); font-weight: 500;">Behandlingsnytte</td>
+            <td style="padding: var(--space-sm); color: var(--color-text-secondary);">Forventet nytte av spesialistbehandling fremfor videre primærhelsetjeneste. Spesialistvurdert kriterium.</td>
+          </tr>
+        </table>
+        <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: var(--space-sm);">
+          Merk: Behandlingsnytte vurderes av spesialisten og er ikke alltid synlig for fastlegen. Denne oversikten viser kjente akseptfaktorer, ikke en komplett sjekkliste.
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-top: var(--space-lg); text-align: center;">
+      <a href="1b.html" class="btn btn-primary">Gå til utforming av henvisning &rarr;</a>
+    </div>
+
+  </div>
+
+  <footer class="prototype-disclaimer">
+    ATLAS er en formativ evalueringsprototype og skal ikke brukes til kliniske beslutninger.<br>
+    Ingen reelle pasientopplysninger eller opplysninger om helsepersonell inngår.<br>
+    <span style="font-size: 0.7rem;">ATLAS is a formative evaluation prototype and must not be used for clinical decision-making. No real patient or clinician data is included.</span>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

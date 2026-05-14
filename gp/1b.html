@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATLAS — Henvisningskomposisjon (Fastlege)</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Screen 1B: GP Referral Composition | Decision Points 2-3 -->
+  <nav class="nav-bar">
+    <span class="nav-title">ATLAS</span>
+    <ul class="nav-links">
+      <li><a href="1a.html">Pasientvurdering</a></li>
+      <li><a href="1b.html" class="active">Henvisning</a></li>
+      <li><a href="1c.html">Tilbakemelding</a></li>
+      <li><a href="../shared/3a.html">Kalibrering</a></li>
+      <li><a href="../shared/3b.html">Dialog</a></li>
+    </ul>
+    <span class="nav-role">Fastlege</span>
+  </nav>
+
+  <div class="page-container">
+
+    <div class="screen-header">
+      <h1>Henvisningskomposisjon</h1>
+      <p class="screen-context">Pasient: Kari Nordli, 34 år — Henvisning til DPS for vurdering av depressive symptomer</p>
+    </div>
+
+    <!-- Component 6: Structured referral template | DP9, DP4 | CUCF D1 | Source: atlas-mockup-specification Screen 1B Row 1 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Henvisningsmal</span>
+        <span class="card-label">Strukturerte felter + fritekst</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);">
+        Fyll ut de strukturerte feltene for spesialistrelevant informasjon. Bruk fritekstfeltet for klinisk kontekst og narrativ.
+      </p>
+
+      <!-- Structured fields -->
+      <div class="form-field">
+        <label class="form-label">Funksjonsnedgang</label>
+        <textarea class="form-textarea" rows="2">50% sykemeldt i to uker. Går fortsatt på jobb, men har trukket seg tilbake sosialt. Tidligere aktiv i frivillig arbeid — har sluttet med dette. Rapporterer vansker med konsentrasjon på arbeidsoppgaver.</textarea>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Symptomenes alvorlighetsgrad</label>
+        <textarea class="form-textarea" rows="2">PHQ-9: 14 (moderat). Nedsatt stemningsleie, tidlig morgenoppvåkning, tap av interesse, konsentrasjonsvansker. Vedvarende over fire måneder.</textarea>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Varighet</label>
+        <textarea class="form-textarea" rows="1">Fire måneder med gradvis forverring. 50% sykemelding siste to uker.</textarea>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Tidligere behandling</label>
+        <textarea class="form-textarea" rows="2">Rask psykisk helsehjelp i kommunen (6 uker) uten meningsfull bedring. Sertralin 50 mg for fem år siden via tidligere fastlege — seponert etter 8 mnd med god effekt. Nåværende fastlege har ikke startet medikasjon, ønsker å avklare diagnostisk bilde først.</textarea>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label">Risikovurdering</label>
+        <textarea class="form-textarea" rows="1">Selvmordsrisikovurdering gjennomført. Ingen akutt selvmordsfare. Ingen voldsrisiko identifisert.</textarea>
+      </div>
+
+      <!-- Free-text narrative -->
+      <div class="expandable-header">
+        <span style="font-size: var(--text-sm); font-weight: 500;">Fritekst — klinisk narrativ</span>
+        <span class="toggle-icon">&#9654;</span>
+      </div>
+      <div class="expandable-content">
+        <div class="form-field">
+          <label class="form-label">Klinisk kontekst og vurdering</label>
+          <textarea class="form-textarea" rows="5">Pasienten gjennomgår skilsmisse, har nylig flyttet til ny kommune og mistet sosialt nettverk. Usikker på om depressive symptomer primært er reaktive (tilpasningsforstyrrelse som kan bedres med tid og støtte) eller representerer en utviklende moderat depressiv episode som krever spesialistbehandling. Funksjonsfall er til stede men ikke alvorlig. Ønsker spesialistvurdering for å avklare diagnostisk bilde og behandlingsbehov.</textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component 7: Information completeness guide | DP2, DP8 | CUCF D1 | Source: atlas-mockup-specification Screen 1B Row 2 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Informasjonskompass</span>
+        <span class="card-label">Ikke en sjekkliste — en veiledning</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+        Viser hvilke spesialistkriterier den nåværende henvisningen adresserer og hvilke som ikke er dekket. Du bestemmer hva som inkluderes.
+      </p>
+
+      <div class="completeness-grid">
+        <div class="completeness-item addressed">
+          <span class="completeness-icon addressed">&#10003;</span>
+          <span>Symptomenes alvorlighetsgrad</span>
+        </div>
+        <div class="completeness-item addressed">
+          <span class="completeness-icon addressed">&#10003;</span>
+          <span>Varighet</span>
+        </div>
+        <div class="completeness-item addressed">
+          <span class="completeness-icon addressed">&#10003;</span>
+          <span>Tidligere behandling</span>
+        </div>
+        <div class="completeness-item addressed">
+          <span class="completeness-icon addressed">&#10003;</span>
+          <span>Risikovurdering</span>
+        </div>
+        <div class="completeness-item unaddressed">
+          <span class="completeness-icon unaddressed">—</span>
+          <span>Funksjonsnedgang (detalj)</span>
+        </div>
+        <div class="completeness-item unaddressed">
+          <span class="completeness-icon unaddressed">—</span>
+          <span>Behandlingsrespons (spesifisering)</span>
+        </div>
+      </div>
+
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);">
+        4 av 6 kriterier adressert. Uadresserte områder er ikke nødvendigvis mangler — de kan være irrelevante for denne presentasjonen. Du bestemmer.
+      </p>
+    </div>
+
+    <!-- Component 8: Uncertainty encoding field | DP7, DP9 | CUCF D1 | Source: atlas-mockup-specification Screen 1B Row 3 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Usikkerhetsbeskrivelse</span>
+        <span class="card-label">Hva er du usikker på, og hvorfor?</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+        Beskriv hva du er usikker på i denne vurderingen. Denne informasjonen overføres til spesialisten som førsteklasses data — ikke skjult i narrativet.
+      </p>
+      <div class="form-field">
+        <textarea class="form-textarea" rows="3">Usikker på om dette er en reaktiv tilpasningsforstyrrelse eller en begynnende moderat depressiv episode. Funksjonsfallet er til stede, men mildt. Manglende respons på kommunalt tilbud taler for spesialistvurdering, men kort varighet og tydelig reaktiv komponent taler mot.</textarea>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted);">
+        Usikkerhet er informasjon, ikke svakhet. Å dokumentere hva du ikke vet hjelper spesialisten å forstå din kliniske vurdering.
+      </p>
+    </div>
+
+    <!-- Component 9: Previous referral outcome display | DP5, DP4 | CUCF D2 | Source: atlas-mockup-specification Screen 1B Row 4 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Tidligere henvisningsutfall</span>
+        <span class="card-label">Denne pasienten</span>
+      </div>
+
+      <!-- Kari Nordli: no prior referrals -->
+      <div class="empty-state">
+        Ingen tidligere henvisninger til DPS for denne pasienten.
+      </div>
+
+      <!-- Alternative state with history (V3 Erlend, shown as expandable demo) -->
+      <div class="expandable-header">
+        <span style="font-size: var(--text-sm); color: var(--color-text-muted);">Vis eksempel med historikk (Erlend Bakken)</span>
+        <span class="toggle-icon">&#9654;</span>
+      </div>
+      <div class="expandable-content">
+        <div style="padding: var(--space-sm); background: var(--color-surface-alt); border-radius: var(--border-radius); font-size: var(--text-sm);">
+          <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-xs);">
+            <span style="font-weight: 500;">Tidligere henvisning — 12.11.2025</span>
+            <span class="status-badge status-rejected">Avslått</span>
+          </div>
+          <p style="color: var(--color-text-secondary);">
+            Avslåttgrunn: "Pasienten kan behandles adekvat i primærhelsetjenesten." Ingen ytterligere forklaring mottatt.
+          </p>
+          <p style="color: var(--color-text-muted); margin-top: var(--space-xs);">
+            Ingen tilbakemelding på hva som manglet eller hva som ville styrket henvisningen.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component 10: Override and rationale capture | DP8 | CUCF D2, D3 | Source: atlas-mockup-specification Screen 1B Row 5 -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Overstyre og begrunne</span>
+        <span class="card-label">Din kliniske vurdering gjelder</span>
+      </div>
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);">
+        Hvis din kliniske vurdering avviker fra informasjonskompasset, kan du overstyre med en begrunnelse. Ingen straff, ingen friksjon. Begrunnelsen registreres for din egen kalibrering over tid.
+      </p>
+
+      <div class="override-section">
+        <div class="override-title">Overstyringsbegrunnelse (valgfritt)</div>
+        <div class="form-field">
+          <textarea class="form-textarea" rows="2" placeholder="Eksempel: Klinisk vurdering — pasientens trajektorie er bekymringsverdig til tross for moderate skårer. Funksjonsfallet er raskere enn PHQ-9 reflekterer."></textarea>
+        </div>
+      </div>
+
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin-top: var(--space-sm);">
+        Å overstyre er ikke en feil. Det er en klinisk beslutning som bidrar til kalibrering.
+      </p>
+    </div>
+
+    <div style="margin-top: var(--space-lg); display: flex; justify-content: space-between;">
+      <a href="1a.html" class="btn">&larr; Tilbake til vurdering</a>
+      <a href="1c.html" class="btn btn-primary">Se tilbakemelding &rarr;</a>
+    </div>
+
+  </div>
+
+  <footer class="prototype-disclaimer">
+    ATLAS er en formativ evalueringsprototype og skal ikke brukes til kliniske beslutninger.<br>
+    Ingen reelle pasientopplysninger eller opplysninger om helsepersonell inngår.<br>
+    <span style="font-size: 0.7rem;">ATLAS is a formative evaluation prototype and must not be used for clinical decision-making. No real patient or clinician data is included.</span>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>
