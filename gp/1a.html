@@ -48,6 +48,9 @@
       <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-top: var(--space-sm);" data-en="Moderate uncertainty — the presentation has features pointing in both directions. Reactive component and short duration argue against, while functional decline and lack of response to municipal services argue for.">
         Moderat usikkerhet — presentasjonen har trekk som peker i begge retninger. Reaktiv komponent og kort varighet taler mot, mens funksjonsfall og manglende respons på kommunalt tilbud taler for.
       </p>
+      <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: var(--space-xs); font-style: italic;" data-en="Illustration: The GP positions the patient on this scale based on their own clinical assessment. The system does not calculate this.">
+        Illustrasjon: Fastlegen plasserer pasienten på denne skalaen basert på sin egen kliniske vurdering. Systemet beregner ikke dette.
+      </p>
     </div>
 
     <!-- Component 2: Uncertainty type flags | DP7 | CUCF D1 | Source: atlas-mockup-specification Screen 1A Row 2 -->
@@ -72,15 +75,15 @@
         <span class="card-title" data-en="Your confidence in the assessment">Din trygghet i vurderingen</span>
         <span class="card-label" data-en="Self-reported confidence">Selvrapportert konfidens</span>
       </div>
-      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);" data-en="How confident are you in your assessment of this patient right now?">
-        Hvor trygg er du på din vurdering av denne pasienten akkurat nå?
+      <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-sm);" data-en="How confident are you in your assessment of this patient right now? Drag the slider to your confidence level.">
+        Hvor trygg er du på din vurdering av denne pasienten akkurat nå? Dra glidebryteren til ditt konfidensnivå.
       </p>
       <div class="confidence-slider-container">
         <input type="range" class="confidence-slider" min="0" max="100" value="45">
         <div class="confidence-value">45 / 100</div>
       </div>
-      <p style="font-size: var(--text-sm); color: var(--color-text-muted); text-align: center;" data-en="Low confidence does not indicate a wrong assessment — it records uncertainty as information.">
-        Lav trygghet indikerer ikke feil vurdering — det registrerer usikkerhet som informasjon.
+      <p style="font-size: var(--text-sm); color: var(--color-text-muted); text-align: center;" data-en="Low confidence does not indicate a wrong assessment — it records uncertainty as information. This is your own input, not a system calculation.">
+        Lav trygghet indikerer ikke feil vurdering — det registrerer usikkerhet som informasjon. Dette er din egen vurdering, ikke en systemberegning.
       </p>
     </div>
 
@@ -88,7 +91,7 @@
     <div class="card">
       <div class="card-header">
         <span class="card-title" data-en="Your referral pattern">Ditt henvisningsmønster</span>
-        <span class="card-label" data-en="Only visible to you">Kun synlig for deg</span>
+        <span class="card-label" data-en="Only visible to you — not shared with DPS, employer, or others">Kun synlig for deg — deles ikke med DPS, arbeidsgiver eller andre</span>
       </div>
 
       <!-- Mature data state -->
