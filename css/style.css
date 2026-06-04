@@ -572,3 +572,32 @@ body {
   .trend-summary { flex-direction: column; gap: var(--space-md); }
   .nav-links { display: none; }
 }
+
+/* ── Evaluator guidance chrome (added) ── */
+a.nav-title { text-decoration: none; color: var(--color-heading); }
+a.nav-title:hover { color: var(--color-accent); }
+.nav-right { display: flex; align-items: center; gap: var(--space-sm); }
+.nav-guide-btn { font-size: 0.75rem; padding: 3px 10px; border: 1px solid var(--color-accent); background: var(--color-accent-light); color: var(--color-accent-hover); border-radius: var(--border-radius); cursor: pointer; }
+.nav-guide-btn:hover { background: var(--color-accent); color: #fff; }
+.atlas-rail { background: var(--color-accent-light); border-bottom: 1px solid var(--color-border-light); color: var(--color-accent-hover); font-size: var(--text-sm); padding: var(--space-xs) var(--space-xl); display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); }
+.atlas-rail-help { flex-shrink: 0; font-size: 0.75rem; padding: 2px 8px; white-space: nowrap; border: 1px solid var(--color-accent); background: var(--color-surface); color: var(--color-accent); border-radius: var(--border-radius); cursor: pointer; }
+.atlas-rail-help:hover { background: var(--color-surface-alt); }
+.atlas-guide { background: var(--color-surface); border: 1px solid var(--color-border-light); border-left: 3px solid var(--color-accent); border-radius: var(--border-radius); padding: var(--space-md) var(--space-lg); margin-bottom: var(--space-lg); box-shadow: var(--shadow-sm); }
+.atlas-guide-head { display: flex; justify-content: space-between; align-items: center; }
+.atlas-guide-head h3 { font-size: var(--text-lg); font-weight: 600; color: var(--color-heading); }
+.atlas-guide-collapse { border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text-secondary); width: 28px; height: 28px; border-radius: var(--border-radius); cursor: pointer; line-height: 1; font-size: var(--text-lg); }
+.atlas-guide-scenario { background: var(--color-surface-alt); border-radius: var(--border-radius); padding: var(--space-sm) var(--space-md); margin: var(--space-sm) 0; font-size: var(--text-sm); }
+.atlas-guide-label { font-size: var(--text-sm); font-weight: 600; color: var(--color-text-secondary); margin-top: var(--space-sm); text-transform: uppercase; letter-spacing: 0.03em; }
+.atlas-guide ul { margin: var(--space-xs) 0 0 var(--space-lg); }
+.atlas-guide li { font-size: var(--text-sm); margin-bottom: var(--space-xs); }
+.atlas-guide-reflect { margin-top: var(--space-md); font-weight: 500; color: var(--color-text); background: var(--color-accent-light); padding: var(--space-sm) var(--space-md); border-radius: var(--border-radius); }
+.atlas-why-toggle { margin-top: var(--space-sm); background: none; border: none; color: var(--color-accent); font-size: var(--text-sm); cursor: pointer; text-decoration: underline; padding: 0; }
+.atlas-why-body { margin-top: var(--space-sm); font-size: var(--text-sm); color: var(--color-text-secondary); border-left: 2px solid var(--color-border-light); padding-left: var(--space-md); }
+.atlas-prevnext { display: flex; justify-content: space-between; gap: var(--space-md); margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--color-border-light); }
+.atlas-modal-overlay { position: fixed; inset: 0; background: rgba(17, 24, 39, 0.55); display: flex; align-items: center; justify-content: center; padding: var(--space-md); z-index: 1000; }
+.atlas-modal { background: var(--color-surface); border-radius: var(--border-radius); padding: var(--space-xl); max-width: 620px; width: 100%; max-height: 85vh; overflow-y: auto; box-shadow: var(--shadow-md); }
+.atlas-modal h2 { font-size: var(--text-xl); color: var(--color-heading); margin-bottom: var(--space-md); }
+.atlas-modal p { font-size: var(--text-sm); margin-bottom: var(--space-sm); color: var(--color-text); }
+.atlas-modal-actions { margin-top: var(--space-lg); text-align: right; }
+.welcome-framing { max-width: 600px; margin: 0 auto var(--space-xl); text-align: left; background: var(--color-surface); border: 1px solid var(--color-border-light); border-left: 3px solid var(--color-accent); border-radius: var(--border-radius); padding: var(--space-md) var(--space-lg); font-size: var(--text-sm); color: var(--color-text-secondary); }
+.is-hidden { display: none !important; }
