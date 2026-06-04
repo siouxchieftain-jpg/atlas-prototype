@@ -55,6 +55,7 @@
 
   var NAV = {
     gp: [
+      { file: 'gp/cases.html', no: 'Saker', en: 'Cases' },
       { file: 'gp/1a.html', no: 'Pasientvurdering', en: 'Patient assessment' },
       { file: 'gp/1b.html', no: 'Henvisning', en: 'Referral' },
       { file: 'gp/1c.html', no: 'Tilbakemelding', en: 'Feedback' },
@@ -62,6 +63,7 @@
       { file: 'shared/3b.html', no: 'Dialog', en: 'Dialogue' }
     ],
     specialist: [
+      { file: 'specialist/cases.html', no: 'Saker', en: 'Cases' },
       { file: 'specialist/2a.html', no: 'Inntaksvurdering', en: 'Intake assessment' },
       { file: 'specialist/2b.html', no: 'Tilbakemelding', en: 'Feedback' },
       { file: 'shared/3a.html', no: 'Kalibrering', en: 'Calibration' },
@@ -353,6 +355,20 @@
       var seen = null;
       try { seen = sessionStorage.getItem('atlas-seen-intro'); } catch (e) {}
       if (!seen) { var ov = document.getElementById('atlas-modal-overlay'); if (ov) ov.classList.remove('is-hidden'); }
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    if (location.hash !== '#erlend') return;
+    var hs = document.querySelectorAll('.expandable-header');
+    for (var i = 0; i < hs.length; i++) {
+      if (/Erlend/i.test(hs[i].textContent)) {
+        var ct = hs[i].nextElementSibling;
+        if (ct && ct.classList.contains('expandable-content')) ct.classList.add('visible');
+        var ic = hs[i].querySelector('.toggle-icon'); if (ic) ic.classList.add('open');
+        hs[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        break;
+      }
     }
   });
 
